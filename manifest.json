@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "Eclipsed",
+    "description": "Applies Dark Theme for Current Page.",
+    "version": "1.0",
+    "background":{
+        "scripts": ["src/background.js"],
+        "persistent": false
+    },
+    "options_page": "options.html",
+    "browser_action":{
+        "default_icon": {
+            "16": "img/icon16.png",
+            "32": "img/icon32.png",
+            "48": "img/icon48.png",
+            "128": "img/icon128.png"
+        },
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "activeTab"
+    ]
+}
