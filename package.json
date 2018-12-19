@@ -12,9 +12,5 @@
   "bugs": {
     "url": "https://github.com/Jexulie/Eclipced/issues"
   },
-  "homepage": "https://github.com/Jexulie/Eclipced#readme",
-  "devDependencies": {
-    "gulp": "^4.0.0",
-    "gulp-sass": "^4.0.2"
-  }
+  "homepage": "https://github.com/Jexulie/Eclipced#readme"
 }

@@ -3,21 +3,31 @@
     "name": "Eclipsed",
     "description": "Applies Dark Theme for Current Page.",
     "version": "1.0",
+    "icons": {
+        "32": "img/icon.png"
+    },
+    "omnibox": {
+        "keyword": "eclipced"
+    },
     "background":{
-        "scripts": ["src/main.js"],
-        "persistent": false
+        "scripts": ["src/background.js"],
+        "persistent": true
     },
     "options_page": "options.html",
     "browser_action":{
+        "default_title": "Eclipced | Extension",
         "default_icon": {
-            "16": "img/icon16.png",
-            "32": "img/icon32.png",
-            "48": "img/icon48.png",
-            "128": "img/icon128.png"
+            "32": "img/icon.png"
         },
         "default_popup": "popup.html"
     },
+    "content_scripts": [
+        {
+            "matches": ["http://*/*", "https://*/*"],
+            "js": ["src/main.js"]
+        }
+    ],
     "permissions": [
-        "activeTab"
+        "activeTab", "tabs"
     ]
 }

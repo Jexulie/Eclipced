@@ -1,12 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Eclipsed | CSS goes Dark...</title>
-</head>
-<body>
-    
-</body>
-</html>
+<script type="text/javascript" src="src/popup.js"></script>
+<div>
+    <button id="darken">Darken</button>
+    <button id="revert">Revert</button>
+</div>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    div{        
+        background: #333;
+        width: 200px;
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    button {
+        border-radius: 10%;
+    }
+    #darken{
+        width: 75px;
+        height: 45px;
+        padding: 3px;
+        border: .5px solid #e7b082;
+        background: #222;
+        color: #e7b082;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 15px;
+        box-shadow: 2px 2px #111;
+        transition: all 1s ease;
+    }
+    #darken:hover{
+        border: .5px solid #9863db;
+        background: #222;
+        color: #9863db;
+        box-shadow: 2px 2px 1px 1px #111;
+        transition: all 1s ease;
+    }
+
+    #revert{
+        width: 75px;
+        height: 45px;
+        padding: 3px;
+        border: .5px solid #db637b;
+        background: #222;
+        color: #db637b;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 15px;
+        box-shadow: 2px 2px #111;
+        transition: all 1s ease;
+    }
+    #revert:hover{
+        border: .5px solid #9863db;
+        background: #222;
+        color: #9863db;
+        box-shadow: 2px 2px 1px 1px #111;
+        transition: all 1s ease;
+    }
+</style>
