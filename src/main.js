@@ -1,10 +1,13 @@
+var cssBackup;
 chrome.extension.onMessage.addListener(function(message, sender, sendResponse){
+    cssBackup = document.styleSheets;
+    console.log(message.type)
     switch(message.type){
         case "darken":
             darken(message.color_pallete);
             break;
         case "revert":
-            revert(message.color_pallete);
+            revert();
             break;
     }
 })
@@ -13,7 +16,9 @@ chrome.extension.onMessage.addListener(function(message, sender, sendResponse){
 // hr
 // visited links
 
+
 function darken(color){
+    
     var bg = document.querySelector("body");
     var ht = document.querySelector("html");
 
@@ -47,6 +52,15 @@ function darken(color){
     var c = document.querySelectorAll("cite");
     var s = document.querySelectorAll("span");
     var co = document.querySelectorAll("code");
+
+    var nestA = document.querySelectorAll("li a");
+
+    if(nestA != null){
+        for(var i=0; i < nestA.length; i++){
+            nestA[i].style.color = color.green_h;
+            nestA[i].style.background = "transparent";
+        }
+    }
 
 
     var hr = document.querySelectorAll("hr");
@@ -196,5 +210,16 @@ function darken(color){
 }
 
 function revert(){
-
+    console.log(cssBackup);
+    cssBackup.map(c => {
+        if(c.disabled != false && c.href != null){
+            var link = document.createElement("link");
+            link.href = c.href;
+            link.type = "text/css";
+            link.rel = "stylesheet";
+            link.media = "screen,print";
+            console.log(link);
+            document.getElementsByTagName("head")[0].appendChild(link);
+        }
+    })
 }

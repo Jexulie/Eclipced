@@ -23,7 +23,6 @@
         "persistent": true
     },
     "browser_action":{
-        "default_title": "Eclipced | Extension",
         "default_icon": {
             "32": "img/icon.png"
         },
