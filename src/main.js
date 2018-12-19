@@ -43,6 +43,7 @@ function darken(color){
     var p = document.querySelectorAll("p");
     var str = document.querySelectorAll("strong");
     var ita = document.querySelectorAll("i");
+    var b = document.querySelectorAll("b");
     var c = document.querySelectorAll("cite");
     var s = document.querySelectorAll("span");
     var co = document.querySelectorAll("code");
@@ -69,7 +70,10 @@ function darken(color){
 
     for(var i=0; i < divs.length; i++){
         divs[i].style.color = color.purple_p;
-        // divs[i].style.backgroundColor = color.med_background;
+        divs[i].style.backgroundColor = color.med_background;
+        if(divs[i].style.zIndex > 100){
+            divs[i].style.backgroundColor = "transparent";
+        }
     }
 
     for(var i=0; i < arts.length; i++){ 
@@ -156,6 +160,11 @@ function darken(color){
     for(var i=0; i < ita.length; i++){
         ita[i].style.color = color.purple_p;
         ita[i].style.background = "transparent";
+    }
+
+    for(var i=0; i < b.length; i++){
+        b[i].style.color = color.purple_p;
+        b[i].style.background = "transparent";
     }
 
     for(var i=0; i < str.length; i++){
