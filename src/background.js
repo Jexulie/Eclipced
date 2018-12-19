@@ -31,6 +31,19 @@ chrome.extension.onMessage.addListener(function(request, sender, sendResponse){
     return true;
 });
 
+chrome.commands.onCommand.addListener(function(command) {
+    console.log('Command:', command);
+    switch(command){
+        case "darken":
+            darken();
+            break;
+        case "revert":
+            revert();
+            break;
+    }
+});
+  
+
 // color pallete
 var colors = {
     light_background: "#333",

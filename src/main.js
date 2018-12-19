@@ -11,6 +11,7 @@ chrome.extension.onMessage.addListener(function(message, sender, sendResponse){
 
 // borders
 // hr
+// visited links
 
 function darken(color){
     var bg = document.querySelector("body");
@@ -54,6 +55,8 @@ function darken(color){
     bg.style.backgroundColor = color.med_background;
     ht.style.backgroundColor = color.med_background;
 
+    bg.style.color = color.purple_p;
+
     head.style.backgroundColor = color.med_background;
     footer.style.backgroundColor = color.med_background;
     nav.style.backgroundColor = color.med_background;
@@ -61,8 +64,6 @@ function darken(color){
     head.style.background = color.med_background;
     footer.style.background = color.med_background;
     nav.style.background =color.med_background;
-
-    console.log(divs)
 
     // backgrounds
 
