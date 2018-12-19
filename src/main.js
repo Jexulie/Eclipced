@@ -54,6 +54,20 @@ function darken(color){
     var co = document.querySelectorAll("code");
 
     var nestA = document.querySelectorAll("li a");
+    var nestB = document.querySelectorAll("p a");
+    var nestC = document.querySelectorAll("h1 a");
+    var nestD = document.querySelectorAll("h2 a");
+    var nestE = document.querySelectorAll("h3 a");
+    var nestF = document.querySelectorAll("h4 a");
+    var nestG = document.querySelectorAll("h5 a");
+    var nestH = document.querySelectorAll("h6 a");
+
+    var nestAA = document.querySelectorAll("a h1");
+    var nestAB = document.querySelectorAll("a h2");
+    var nestAC = document.querySelectorAll("a h3");
+    var nestAD = document.querySelectorAll("a h4");
+    var nestAF = document.querySelectorAll("a h5");
+    var nestAE = document.querySelectorAll("a h6");
 
     if(nestA != null){
         for(var i=0; i < nestA.length; i++){
@@ -62,6 +76,96 @@ function darken(color){
         }
     }
 
+    if(nestB != null){
+        for(var i=0; i < nestB.length; i++){
+            nestB[i].style.color = color.green_h;
+            nestB[i].style.background = "transparent";
+        }
+    }
+
+    if(nestC != null){
+        for(var i=0; i < nestC.length; i++){
+            nestC[i].style.color = color.green_h;
+            nestC[i].style.background = "transparent";
+        }
+    }
+
+    if(nestD != null){
+        for(var i=0; i < nestD.length; i++){
+            nestD[i].style.color = color.green_h;
+            nestD[i].style.background = "transparent";
+        }
+    }
+
+    if(nestE != null){
+        for(var i=0; i < nestE.length; i++){
+            nestE[i].style.color = color.green_h;
+            nestE[i].style.background = "transparent";
+        }
+    }
+
+    if(nestF != null){
+        for(var i=0; i < nestF.length; i++){
+            nestF[i].style.color = color.green_h;
+            nestF[i].style.background = "transparent";
+        }
+    }
+
+    if(nestG != null){
+        for(var i=0; i < nestG.length; i++){
+            nestG[i].style.color = color.green_h;
+            nestG[i].style.background = "transparent";
+        }
+    }
+
+    if(nestH != null){
+        for(var i=0; i < nestH.length; i++){
+            nestH[i].style.color = color.green_h;
+            nestH[i].style.background = "transparent";
+        }
+    }
+
+    if(nestAA != null){
+        for(var i=0; i < nestAA.length; i++){
+            nestAA[i].style.color = color.green_h;
+            nestAA[i].style.background = "transparent";
+        }
+    }
+
+    if(nestAB != null){
+        for(var i=0; i < nestAB.length; i++){
+            nestAB[i].style.color = color.green_h;
+            nestAB[i].style.background = "transparent";
+        }
+    }
+
+    if(nestAC != null){
+        for(var i=0; i < nestAC.length; i++){
+            nestAC[i].style.color = color.green_h;
+            nestAC[i].style.background = "transparent";
+        }
+    }
+
+    if(nestAD != null){
+        for(var i=0; i < nestAD.length; i++){
+            nestAD[i].style.color = color.green_h;
+            nestAD[i].style.background = "transparent";
+        }
+    }
+
+    if(nestAE != null){
+        for(var i=0; i < nestAE.length; i++){
+            nestAE[i].style.color = color.green_h;
+            nestAE[i].style.background = "transparent";
+        }
+    }
+
+    if(nestAF != null){
+        for(var i=0; i < nestAF.length; i++){
+            nestAF[i].style.color = color.green_h;
+            nestAF[i].style.background = "transparent";
+        }
+    }
 
     var hr = document.querySelectorAll("hr");
     // var b = document.querySelectorAll("button");
